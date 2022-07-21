@@ -5,7 +5,7 @@ They are the ones that take the sytax from the programmer and translate the synt
 ### Interpreted Languages
 They are the ones that are run by a text editor and executed line by line so they are more dinamic in the way of making changes on the program but as this process seems diligent they are less efficient and slower to compiled languages. One advantage can be they are multi-platform some examples could be Javascript, Python, Ruby etc.
 
-## Is Java compiled, interpreted or both?
+## Is Java Compiled, Interpreted Or Both?
 
 This is a good question because there are not only two types of programming languages, there is one more that are called hybrid laguages and Java is one of them, in this case Java compiles the code through the Java compiler to get bytecode and the JVM (Java Virtual Machine) executes it, but there is also an implementation of JVM that interprets the code instead of compiling it.
 
@@ -21,7 +21,7 @@ The next code converts dollars into bitcoins:
 5. PRINT x
 6. END
 ```
-## My year of birth in binary
+## My Year Of Birth In Binary
 
 I was born in 2000 so lets check a set of positions that will help us to find 2000 in binary:
 
@@ -40,3 +40,54 @@ I was born in 2000 so lets check a set of positions that will help us to find 20
 |10|2^10 = 1024|
 
 If we pick position 4, 6, 7, 8, 9 and 10 the sum will give us 2000 so my year of birth in binary is **11111010000**
+
+## MIPS Exercises
+
+first of this is a low-level language, the first exercise consists in getting 2 numbers and then display the sum: 
+
+```
+.data
+	      number1: .asciiz "\nType in first number: "
+	      number2: .asciiz "\nType in second number: "
+	      result: .asciiz "\nThe sum is "
+  .text
+	      main:
+              li $v0, 4
+              la $a0, number1
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t0, $v0
+
+              li $v0, 4
+              la $a0, number2
+              syscall
+
+              li $v0, 5
+              syscall
+
+              move $t1, $v0
+              
+              add $t2, $t0, $t1
+              
+              li $v0, 4
+              la $a0, result
+              syscall
+
+              li $v0, 1
+              move $a0, $t2
+              syscall
+```
+
+The second exercise consists in displaying a name: 
+```
+ .data
+	      name: .asciiz "\nDiego\n"
+  .text
+	      main:
+              li $v0, 4
+              la $a0, name
+              syscall
+```
