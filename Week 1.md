@@ -23,7 +23,7 @@ The next code converts dollars into bitcoins:
 ```
 ## My year of birth in binary
 
-I was born in 2000 so lets check the a set of positions that will help us to find 2000 in binary:
+I was born in 2000 so lets check a set of positions that will help us to find 2000 in binary:
 
 |position|binary|
 |--|---|
