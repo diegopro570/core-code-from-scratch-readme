@@ -21,3 +21,22 @@ The next code converts dollars into bitcoins:
 5. PRINT x
 6. END
 ```
+## My year of birth in binary
+
+I was born in 2000 so lets check the a set of positions that will help us to find 2000 in binary:
+
+|position|binary|
+|--|---|
+|0|2^0 = 1|
+|1|2^1 = 2|
+|2|2^2 = 4|
+|3|2^3 = 8|
+|4|2^4 = 16|
+|5|2^5 = 32|
+|6|2^6 = 64|
+|7|2^7 = 128|
+|8|2^8 = 256|
+|9|2^9 = 512|
+|10|2^10 = 1024|
+
+If we pick position 4, 6, 7, 8, 9 and 10 the sum will give us 2000 so my year of birth in binary is **11111010000**
