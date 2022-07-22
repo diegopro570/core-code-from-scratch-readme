@@ -43,7 +43,7 @@ If we pick position 4, 6, 7, 8, 9 and 10 the sum will give us 2000 so my year of
 
 ## MIPS Exercises
 
-first of this is a low-level language, the first exercise consists in getting 2 numbers and then display the sum: 
+first of this is a low-level language, the first exercise consists in getting 2 numbers and display the sum: 
 
 ```
 .data
@@ -90,4 +90,64 @@ The second exercise consists in displaying a name:
               li $v0, 4
               la $a0, name
               syscall
+```
+## Print Special Numbers
+
+The following section shows a code in JavaScript that displays all the even numbers form 0  to 100 using a flow control stucture, as my favorite one is "for" I am going to put it out in practice but it does not mean that it is the only flow control structure, we also have While, do while, for each etc.
+
+```
+for(let i= 0; i<=100; i+=2){
+    console.log(i);
+}
+```
+
+## Bad code
+
+The following code has an error and our task is to find what the error is: 
+
+```
+var cond = false;
+
+if ((cond = true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+```
+As we can see on the third line inside the argument of the flow structure "if", the "=" is not a conditional, it is assigning a new value to **cond** which is the value "true" but it does not make sense that we want to re-assing a variable inside an "if" so the right code will be: 
+
+```
+var cond = false;
+
+if ((cond == true)) {
+  console.log('The cond variable is true');
+} else {
+  console.log('The cond variable is false');
+```
+
+## Bad code 2
+
+In this section we had to help a confused programmer that wanted to create a program with the following outputs:
+
+1. If the number is 100 the system has to display **This is a special number!**
+2. If the number is less than 1000, multiple of 10 and not equal to 100 the system has to display **This number is almost special**
+3. If the number does not match with any instruction above the system has to display **Just a regular number**
+
+so in JavaScript the final result will be:
+
+```
+let numbfunc=(litt)=>{
+
+    let n=litt.toString();
+    
+    if(n == 100){
+        console.log( "This is a special number!");
+    }
+    else if (n<1000 && n.endsWith(0) && n != 100 && n!=0){
+        console.log("This number is almost special");
+    }
+    else{
+        console.log("Just a regular number")
+    }
+
+}
 ```
