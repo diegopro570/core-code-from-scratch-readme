@@ -1,4 +1,4 @@
-# Multiply Exercise
+## Multiply Exercise
 
 From a given code that does not execute properly we have to find a typo on syntax so that the code will execute correctly:
 ```
@@ -13,7 +13,7 @@ function multiply(a, b){
 }
 ```
 
-# ASCII Exercise
+## ASCII Exercise
 
 For this exercise we are going to use an encoding format to translate a sentence into numbers, also we are going to use a new function called charCodeAt() that specifically does the task for this exercise:
 ```
