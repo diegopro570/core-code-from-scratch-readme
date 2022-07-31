@@ -79,3 +79,23 @@ function finalGrade(exam, projects) {
   }
 }
 ```
+## Remove All Exclamation Marks From The End Of Sentence
+
+In this exercise we are going to apply a new method **replace** so the code will be:
+
+```
+let remove = str =>{
+    return str.replace(/!+$/g,"")
+}
+```
+To explain the first argument better the ""+"" symbol means that the function has to include all the elements that we are looking for, the **$** sign means that it will only take the element at the end and the whole argument is called **literal notation**.
+
+## Vowel Remover Exercise
+
+In this exercise as the previous one we are going to use the **replace** method so the code will be:
+```
+let shortcut = str =>{
+    return str.replace(/[aeiou]/g,"")
+}
+```
+we can also use arrays as literal notation.
