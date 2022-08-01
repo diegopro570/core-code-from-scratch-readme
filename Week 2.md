@@ -99,3 +99,22 @@ let shortcut = str =>{
 }
 ```
 we can also use arrays as literal notation.
+
+## Rock Paper Scissors!
+
+In this exercise we are just going to use decision-maker statemets and logical operator so the code will be:
+```
+let game = ["scissors","rock","paper"]
+    if((p1===game[0] && p2===game[1])||(p1===game[1] && p2===game[2])||(p1===game[2] && p2===game[0])){
+        return "Player 2 won!"
+    }
+    else if((p2===game[0] && p1===game[1])||(p2===game[1] && p1===game[2])||(p2===game[2] && p1===game[0])){
+        return "Player 1 won!"
+    }
+    else if(p1===p2){
+        return "Draw!"
+    }
+    else{
+        return null
+    }
+```
