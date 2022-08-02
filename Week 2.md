@@ -92,7 +92,7 @@ To explain the first argument better the ""+"" symbol means that the function ha
 
 ## Vowel Remover Exercise
 
-In this exercise as the previous one we are going to use the **replace** method so the code will be:
+In this exercise as the previous one we are going to use the **replace()** method so the code will be:
 ```
 let shortcut = str =>{
     return str.replace(/[aeiou]/g,"")
@@ -118,3 +118,22 @@ let game = ["scissors","rock","paper"]
         return null
     }
 ```
+## Persistent Bugger Exercise
+
+This exercise consists in returning the number of times that we have to multiply digit by digit of x number until getting just one digit, we are going to use a new method called **split()** that separates a text-string taking a separaror as argument, also we will use the method **toString()** that tranforms any object into a string.
+
+```
+let persistence = num =>{
+    let factor = num.toString().split("")
+    
+    while(factor.length>1){
+        let result = 1
+        for(let i=0;i<factor.length;i++){
+            result=result*factor[i]
+        }
+        factor=result.toString().split("")
+    }
+    return factor
+}
+```
+
