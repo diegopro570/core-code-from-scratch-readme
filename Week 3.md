@@ -27,16 +27,18 @@ let likes = names => {
 
 This exercise consists in returning bits from a given decimal number, we have to implement a new method called **reduce()**, its function is to return a single value from an array
 ```
-let test = x.toString(2).split("")
-let neuw = []
-for(let i=0;i<test.length;i++){
-    neuw.push(parseInt(test[i]))
-}
+const countBits = (x) => {
+  let test = x.toString(2).split("");
+  let neuw = [];
+  for (let i = 0; i < test.length; i++) {
+    neuw.push(parseInt(test[i]));
+  }
 
-let final = neuw.reduce((acc,item)=>{
-    return acc=acc+item
-})
-console.log(final)
+  let final = neuw.reduce((acc, item) => {
+    return (acc = acc + item);
+  });
+  return final;
+}
 ```
 
 
