@@ -61,3 +61,26 @@ const order = words => {
 }   
 ```
 
+## Simple Pig Latin Exercise
+
+From a given text we have to create a new one where we have to move the fist letter to the end of the word, after doing this we have to add "ay" at the end of the word, it is important that we do not have to include "!" and "?"
+```
+function pigIt(test) {
+  let final = [];
+  let convert = test.split(" ");
+
+  for (let i = 0; i < convert.length; i++) {
+    let long = convert[i].length;
+
+    let temporal = convert[i].slice(1, long);
+    if (convert[i] !== "!" && convert[i] != "?") {
+      let quinal = temporal + convert[i].slice(0, 1) + "ay";
+      final.push(quinal);
+    } else {
+      final.push(convert[i]);
+    }
+  }
+  return final.join(" ");
+}
+  ```
+My code is a little bit gross but of course there are easier ways to do it but we need to apply more advanced knowledges
