@@ -41,4 +41,23 @@ const countBits = (x) => {
 }
 ```
 
+## Your Order, Please Exercise
+
+In this exercise we are going to create a code that will sort a text where every single word has a number, it will display from the lowest one to the greatest one
+```
+const order = words => {
+
+    let factor = words.split(" ")
+    let neuw = []
+
+    for(let i=0;i<=factor.length;i++){
+        for(let j=0;j<factor.length;j++){
+            if(factor[j].indexOf(i)>= 0){
+                neuw.push(factor[j])
+            }
+        }
+    }
+    return neuw.join(" ")
+}   
+```
 
