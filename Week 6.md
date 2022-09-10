@@ -23,3 +23,31 @@ function warnTheSheep(queue: string[]): string {
   
 }
 ``` 
+
+## Playing with digits
+
+```
+const digPow = (n: number, p: number) => {
+  let numero: string[] = n.toString().split("");
+  let realNumbers: number[] = numero.map(Number);
+  let total: number = 0;
+
+  for (let i = 0; i < realNumbers.length; i++) {
+    total = total + realNumbers[i] ** p;
+    p++;
+  }
+  if (total >= n && total % n == 0) {
+    let bucle: number = total;
+    let counter: number = -1;
+    while (bucle >= 0) {
+      bucle = bucle - n;
+      counter++;
+    }
+
+    return counter + " " + total;
+  } else {
+    return -1;
+  }
+};
+```
+
