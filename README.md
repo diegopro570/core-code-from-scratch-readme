@@ -6,4 +6,4 @@
 
 [Week 3](https://github.com/diegopro570/core-code-from-scratch-readme/blob/main/Week%203.md)
 
-[Week 6](https://github.com/diegopro570/core-code-from-scratch-readme/blob/main/Week%204.md)
+[Week 6](https://github.com/diegopro570/core-code-from-scratch-readme/blob/main/Week%206.md)
