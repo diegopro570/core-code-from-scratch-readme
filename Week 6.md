@@ -23,6 +23,26 @@ function warnTheSheep(queue: string[]): string {
   
 }
 ``` 
+## A Rule Of Disibility By 13
+
+```
+export function thirt(n: number): number {
+  const resArr = Array.from(String(n), (n) => Number(n))
+    resArr.reverse()
+
+    for(let i = 0; i < resArr.length; i++) {
+        resArr[i] *= (10 ** i) % 13
+    }
+
+    const resNumber = resArr.reduce((prev, current) => prev + current, 0);
+    
+    if(resNumber == n) {
+        return n
+    }
+
+    return thirt(resNumber)
+}
+```
 
 ## Playing with digits
 
@@ -50,4 +70,5 @@ const digPow = (n: number, p: number) => {
   }
 };
 ```
+
 
